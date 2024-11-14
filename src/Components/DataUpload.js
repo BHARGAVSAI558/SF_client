@@ -15,7 +15,7 @@ function DataUpload() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:5000/api/upload', {
+      const response = await fetch('https://sf-server-2.onrender.com/api/upload', {
         method: 'POST',
         body: formData,
       });
